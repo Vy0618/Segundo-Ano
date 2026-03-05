@@ -1,0 +1,79 @@
+1) Um banco de dados, ou servidor, é um elemento de infraestrutura web com o objetivo de armazenar dados e realizar processos para clientes web.
+2) São exemplos de Bancos de Dados Relacionais, ou, banco de dados que se apresentam na forma de relações entre tabelas, Sql Server e MySql.
+3)São exemplos de Banco de Dados Não-Relacionais, ou, banco de dados que não se apresentam na forma de relações entre tabelas, e sim, de maneiras alternativas e variadas, bancos de dados de documentos (que armazenam suas informações em arquivos de texto JSON) e banco de dados de gráficos (que armazenam dados na forma de nódulos interligados).
+4) O Banco de Dados relacional armazena seus dados na forma de tabelas e células relacionadas; enquanto isso, o Banco de Dados Não-Relacional relaciona seus dados de maneiras variadas como, por exemplo, texto, nódulos, dentre outros.
+5) Uma tabela é uma maneira de armazenar dados e elementos em colunas e linhas, de modo a relaciona-las umas com as outras.
+6) Um registro é uma linha individual em uma tabela de banco de dados relacional.
+7) Um campo, também conhecido como coluna, é a menor unidade estruturada de dados em uma tabela de bancos de dados relacional. Ele representa um atributo específico de um registro e define o tipo de informação a ser armazenada.
+8) Chave primária é um elemento cujo propósito é identificar uma tabela.
+9) Chave Estrangeira é a invocação de uma Chave Primária numa tabela diferente de seu local de origem. Seu propósito é invocar os atributos da tabela a qual dita Chave Primária pertence.
+10) A linguagem SQL (Structured Query Language) é uma linguagem padrão para gerenciar e manipular dados em bancos de dados relacionais de maneira simples e eficiente.
+11) 
+
+create table aluno(
+    idAluno int (10) not null,
+    nome varchar (100),
+    idade int,
+    primary key (idAluno)
+    );
+
+12)
+insert into aluno(idAluno, nome, idade)
+values (1, 'Pedro', 17);
+
+13)
+select * from aluno;
+
+14)
+update aluno
+set idade = 15
+where idAluno = 1;
+
+15)
+delete from aluno where idAluno=1;
+
+16)
+select * from aluno where idade > 16;
+
+17)
+select * from aluno
+order by nome;
+
+18)
+Um relacionamento entre tabelas determina como os dados em uma tabela se conectam aos dados em outras. 
+
+19) 
+O comando inner join seleciona entradas que tem valores iguais em duas tabelas, geralmente via uma chave estrangeira, e as retorna uma única tabela com os valores desejados.
+
+Ex.:
+
+table produtos
+Id Produto            NomeProduto                     IdCategoria
+1                     Chá                             1
+
+table categorias
+IdCategoria         Nome Categoria               
+1                     Bebidas não alcoólicas       
+
+utilizar
+
+select IdProduto, NomeProduto, NomeCategoria
+from produtos
+inner join categorias on produtos.IdCategoria  = Categorias.IdCategoria
+
+retorna:
+
+IdProduto             NomeProduto       NomeCategoria
+1		      Chá	        Bebidas Não Alcoólicas
+
+20)
+select aluno.nome, aluno.idade, aluno.IdCurso from aluno inner join cursos on aluno.IdCurso = cursos. IdCurso;
+
+Output:
+
+nome
+idade
+IdCurso
+Pedro
+15
+1

@@ -1,0 +1,49 @@
+Favor desenvolver os exercícios como revisão JAVA, abaixo:
+
+1. Faça um programa em Java que mostre a mensagem "Olá, Java!" na tela.
+
+2. Leia um número inteiro e mostre o dobro desse número.
+
+3. Leia dois números inteiros e mostre a soma entre eles.
+
+4. Leia um número inteiro e informe se ele é positivo ou negativo.
+
+5. Leia a idade de uma pessoa e informe se ela é maior ou menor de idade.
+
+6. Mostre os números de 1 a 10 utilizando o laço for.
+
+7. Leia um número inteiro e mostre a tabuada desse número.
+
+8. Leia 5 números inteiros e calcule a média deles.
+
+9. Leia um número inteiro e informe se ele é par ou ímpar.
+
+10. Faça um programa que conte de 10 até 1 utilizando o laço while.
+
+11. Crie uma classe chamada Pessoa com os atributos nome e idade.
+
+12. Crie um objeto da classe Pessoa e mostre os valores dos atributos.
+
+13. Crie os métodos get e set para os atributos da classe Pessoa.
+
+14. Crie um método que mostre uma mensagem de apresentação da pessoa.
+
+15. Crie uma classe Animal com o atributo nome e o método fazerSom().
+
+16. Crie uma classe Cachorro que herde da classe Animal.
+
+17. Sobrescreva o método fazerSom() na classe Cachorro para mostrar a mensagem "O cachorro late".
+
+18. Crie uma classe Gato que herde da classe Animal.
+
+19. Utilize polimorfismo para chamar o método fazerSom() de um objeto Cachorro e de um objeto Gato.
+
+20. Explique com suas próprias palavras o que são:
+
+Abstração
+
+Encapsulamento
+
+Herança
+
+Polimorfismo
