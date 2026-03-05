@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+header {
+    padding: 10px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgb(90, 90, 90);
+}
+
+.headerRight {
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+
+.genericContainer {
+    border-radius: 20px;
+    background-color: rgb(31, 31, 31);
+    align-items: center;
+    justify-items: center;
+    border: 2px solid rgb(90, 90, 90);
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.superbox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    border: 2px solid red;
+}
+
+input {
+    display: block;
+    margin: 20px;
+    border: none;
+    width: 40vh;
+    height: 5vh;
+    background-color: rgb(44, 44, 44);
+    border: 2px solid rgb(101, 101, 101);
+    border-radius: 20px;
+}
+
+input::placeholder {
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(216, 216, 216);
+
+}
+
+button {
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(101, 101, 101);
+}
+
+.tabelaUsuarios {
+    text-align: justify;
+    border-collapse: collapse;
+
+    td,
+    tr {
+        padding: 5px;
+        border: 1.5px solid rgb(101, 101, 101);
+        ;
+    }
+}
+
+.preview {
+    display: none;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.form-group {
+    border: 2px solid red;
+    align-items: center;
+    justify-items: center;
+}
+
+img {
+    border-radius: 50%;
+
+}
