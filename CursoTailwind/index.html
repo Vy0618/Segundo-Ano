@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Front-End | Tailwind CSS</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  />
+</head>
+
+<body class="bg-zinc-900 text-zinc-300 font-sans antialiased">
+
+    <!-- Header simplificado -->
+    <header class="border-b border-zinc-800">
+        <div class="container mx-auto px-6 py-4 ">
+            <div class="flex items-center justify-between">
+                <h1 class="text-center text-xl font-semibold text-white">[FRONT-END]</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-6 py-20 max-w-4xl">
+        <div class="text-center ">
+            <h2 class="text-5xl font-bold text-blue-500 mb-6">
+                Aprenda Front-End do ZERO
+            </h2>
+            <p class="text-xl text-zinc-400 mb-10 leading-relaxed">
+                Domine a programação em HTML e CSS com a integração de <span class="text-blue-500 font-extrabold">
+                    TAILWIND</span>
+            </p>
+
+        </div>
+    </section>
+
+    <section class="border-y border-zinc-800 bg-zinc-950/50">
+        <div class="container mx-auto px-6 py-16 max-w-4xl">
+            <h3 class="text-center text-2xl font-semibold text-white mb-8">O QUE É TAILWIND?</h3>
+
+            <p class="text-zinc-400 mb-8 leading-relaxed">
+                Tailwind CSS é um framework de CSS utilitário. Ao invés de classes pré-prontas
+                (como "btn" ou "card"), ele oferece classes atômicas para construir designs
+                diretamente no HTML.
+            </p>
+
+            <div class="flex justify-between :">
+                <div class="bg-zinc-900 p-6 rounded-lg border border-zinc-800">
+                    <h4 class="text-green-400 font-medium mb-3">Vantagens</h4>
+                    <ul class="space-y-2 text-sm text-zinc-400">
+                        <li>• Desenvolvimento mais rápido</li>
+                        <li>• CSS consistente</li>
+                        <li>• Responsivo fácil</li>
+                        <li>• Sem nomes criativos</li>
+                    </ul>
+                </div>
+                <div class="bg-zinc-900 p-6 rounded-lg border border-zinc-800">
+                    <h4 class="text-red-400 font-medium mb-3">Desvantagens</h4>
+                    <ul class="space-y-2 text-sm text-zinc-400">
+                        <li>• HTML poluído</li>
+                        <li>• Curva de aprendizado</li>
+                        <li>• Configuração inicial</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container mx-auto px-6 py-16">
+        <h3 class="text-2xl font-semibold text-white mb-8 text-center">Módulos</h3>
+
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="bg-zinc-900 p-6 rounded-lg border border-zinc-800 hover:border-zinc-700 transition">
+                <div class="text-3xl mb-3"><i class="fab fa-html5 fa-3x" style="color: rgb(236, 142, 0);"></i></div>
+                <h4 class="text-white font-medium mb-2">HTML</h4>
+                <p class="text-sm text-zinc-400 mb-4">Estrutura semântica e boas práticas.</p>
+                <span class="text-xs text-zinc-500">12 aulas</span>
+            </div>
+            <div class="bg-zinc-900 p-6 rounded-lg border border-zinc-800 hover:border-zinc-700 transition">
+                <div class="text-3xl mb-3"><i class="fa-brands fa-css fa-3x" style="color: rgb(41, 151, 238);"></i></div>
+                <h4 class="text-white font-medium mb-2">CSS</h4>
+                <p class="text-sm text-zinc-400 mb-4">Estilização, flexbox, grid e Tailwind.</p>
+                <span class="text-xs text-zinc-500">16 aulas</span>
+            </div>
+            <div class="bg-zinc-900 p-6 rounded-lg border border-zinc-800 hover:border-zinc-700 transition">
+                <div class="text-3xl mb-3"><i class="fab fa-square-js fa-3x" style="color: yellow;"></i></div>
+                <h4 class="text-white font-medium mb-2">JavaScript</h4>
+                <p class="text-sm text-zinc-400 mb-4">Lógica, DOM e eventos.</p>
+                <span class="text-xs text-zinc-500">20 aulas</span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="bg-zinc-950 border-t border-zinc-800">
+        <div class="container mx-auto px-6 py-16 max-w-4xl">
+            <h3 class="text-2xl font-semibold text-white mb-8">2. INSTALAÇÃO (resumo)</h3>
+
+            <div class="space-y-4 text-sm">
+                <div class="bg-zinc-900 p-4 rounded-lg border border-zinc-800">
+                    <code class="text-blue-500">npm install -D tailwindcss@3</code>
+                    <p class="text-white mt-1">Instala o Tailwind</p>
+                </div>
+                <div class="bg-zinc-900 p-4 rounded-lg border border-zinc-800">
+                    <code class="text-blue-500">npx tailwindcss init</code>
+                    <p class="text-white">Cria o config file</p>
+                </div>
+                <div class="bg-zinc-900 p-4 rounded-lg border border-zinc-800">
+                    <p class="text-zinc-300 mb-2">No <span class="text-blue-500">tailwind.config.js</span>:</p>
+                    <code class="text-white text-xs">content: ["./src/**/*.{html,js}"]</code>
+                </div>
+                <div class="bg-zinc-900 p-4 rounded-lg border border-zinc-800">
+                    <p class="text-zinc-300 mb-2">No <span class="text-blue-500">input.css</span>:</p>
+                    <code
+                        class="text-white text-xs">@tailwind base;<br>@tailwind components;<br>@tailwind utilities;</code>
+                </div>
+                <div class="bg-zinc-900 p-4 rounded-lg border border-zinc-800">
+                    <code class="text-blue-500">npx tailwindcss -i ./src/input.css -o ./src/output.css --watch</code>
+                    <p class="text-white mt-1">Gera o CSS</p>
+                </div>
+            </div>
+
+            <p class="text-zinc-400 text-sm mt-6">
+                Depois é só linkar o output.css no HTML e instalar a extensão
+                <span class="text-blue-500">Tailwind CSS IntelliSense</span> no VS Code.
+            </p>
+        </div>
+    </section>
+
+  
+    <footer class="border-t border-zinc-800 py-6 text-center text-sm text-zinc-600">
+        <p> Todos os Direitos Reservados © Vinicius Azevedo 2026</p>
+    </footer>
+
+</body>
+
+</html>
